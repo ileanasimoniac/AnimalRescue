@@ -21,10 +21,14 @@ public class Main {
         Veterinarian veterinarian;
         veterinarian = new Veterinarian("Popescu Emil", "cardiologie");
         printVeterinarian(veterinarian);
+
+        Dog dog;
+        dog = new Dog("Azorel");
+        printDog(dog);
     }
 
     private static void printAnimal(Animal animal) {
-        System.out.println("Animal");
+        System.out.println("Dog");
         System.out.println("Nume: " + animal.getName());
         System.out.println("Varsta: " + animal.getAge());
         System.out.println("Nivel sanatate: " + animal.getHealthLevel());
@@ -33,6 +37,18 @@ public class Main {
         System.out.println("Mancare favorita: " + animal.getFavouriteFood());
         System.out.println("Activitate favorita: " + animal.getFavouriteActivityName());
     }
+
+    private static void printDog(Dog dog) {
+        System.out.println("Animal");
+        System.out.println("Nume: " + dog.getName());
+        System.out.println("Varsta: " + dog.getAge());
+        System.out.println("Nivel sanatate: " + dog.getHealthLevel());
+        System.out.println("Nivel senzatie foame: " + dog.getHungerLevel());
+        System.out.println("Nivel stare de spirit: " + dog.getSpiritLevel());
+        System.out.println("Mancare favorita: " + dog.getFavouriteFood());
+        System.out.println("Activitate favorita: " + dog.getFavouriteActivityName());
+    }
+
 
     private static void printAnimalAdopter(AnimalAdopter animalAdopter) {
         System.out.println("");
