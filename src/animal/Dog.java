@@ -23,9 +23,9 @@ public class Dog extends Animal {
 
     public void setSpiritLevel(int spiritLevel) {
         if (spiritLevel < 1) {
-            this.spiritLevel = 0;
+            this.spiritLevel = 5;
         } else if (spiritLevel > 10) {
-            this.spiritLevel = 10;
+            this.spiritLevel = 15;
         } else {
             this.spiritLevel = spiritLevel;
         }
