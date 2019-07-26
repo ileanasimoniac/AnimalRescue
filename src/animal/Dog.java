@@ -31,4 +31,12 @@ public class Dog extends Animal {
         }
     }
 
+    public boolean speak()  {
+        return true;
+    }
+
+    public boolean walk() {
+        return true;
+    }
+
 }
